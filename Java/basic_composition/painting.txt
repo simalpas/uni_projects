@@ -1,0 +1,34 @@
+
+//Examples of Artist construction
+Artist anArtist;
+
+//execute these one at a time
+anArtist = new Artist(); //An artist we don’t know anything about
+anArtist = new Artist("Banksy"); //Artist whose year of birth is unknown
+anArtist = new Artist("Banksy", null); //Alternative Banksy construction
+anArtist = new Artist("Van Gogh", "1853"); //A well-known artist
+
+//The workspace automatically displays the result of calling the toString() method
+//as you can see by executing the line of code below (unless you untick the 'Show Results' box)
+anArtist.toString();
+
+//Examples of Painting construction
+
+//1. The Artist referenced by frida is used to initialise a Painting
+Artist frida = new Artist("Frida Kahlo de Rivera","1907");
+
+Painting p = new Painting("Self-Portrait with Thorn Necklace and Hummingbird", 
+                          "1940", 4000000, frida);
+
+//2. An anonymous Frida Artist object, used to initialise a painting
+Painting p = new Painting("Self-Portrait with Thorn Necklace and Hummingbird", 
+                          "1940", 4000000, new Artist("Frida Kahlo de Rivera","1907"));
+
+//Another anonymous Artist object example. In this case we don't know the artist's year of birth
+Painting p = new Painting("Stonehenge", "2007", 0, new Artist("Banksy"));
+
+//3. A painting created without an artist having been provided
+Painting p = new Painting("An Enormous Sheep"); //inspect the artist inside p
+
+//The artist for p could be set at a later stage as follows:
+p.setArtistName("Sheepy Parva"); //inspect p's artist again to see what happened

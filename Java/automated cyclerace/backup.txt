@@ -1,0 +1,8 @@
+// testing toString() and compareTo()
+Cyclist c = new Cyclist("joe", "Junior");
+Cyclist d = new Cyclist("sam", "Adult");
+c.setTime(11999);
+d.setTime(7000);
+c.toString();
+c.compareTo(d);
+d.compareTo(c);

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=aName\ aDescription
+comment0.target=Pet(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pet\r\n
+comment1.params=aName
+comment1.target=void\ setName(java.lang.String)
+comment2.params=aDescription
+comment2.target=void\ setDescription(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+numComments=5

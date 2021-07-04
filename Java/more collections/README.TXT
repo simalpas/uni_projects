@@ -1,0 +1,34 @@
+------------------------------------------------------------------------
+A Class that records the dishes for a menu for a restaurant along with
+their ingredients.
+------------------------------------------------------------------------
+//  Create new Dishes object
+Dishes menu = new Dishes();
+
+// Add some test data to work with
+menu.populateTestData();
+
+//Print the populated map
+menu.printMap();
+
+// test search functionality
+menu.printMapValue("Carbonara");
+menu.printMapValue("ChickenPie");
+
+// Create a new set of ingredients
+Set<String> dish4 = new HashSet<>();
+String[] ingredients4 = {"Mozzarella", "Tomato", "Basil", "Olive Oil"};
+Collections.addAll(dish4, ingredients4);
+
+// Test functionality of the adding method
+menu.addMapEntry("Caprese", dish4);
+menu.printMap();
+
+// Testing delete function
+menu.deleteEntry("Carbonara");
+
+// Test adding and removing from values at a given valid key
+menu.addToValueAtKey("Pizza", "Sausage");
+menu.printMapValue("Pizza");
+menu.deleteFromValueAtKey("Pizza", "Water");
+menu.printMapValue("Pizza");

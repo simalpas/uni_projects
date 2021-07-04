@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dishes()
+comment0.text=\r\n\ Zero\ arg\ constructor\ for\ objects\ of\ class\ Dishes\r\n
+comment1.params=
+comment1.target=void\ populateTestData()
+comment1.text=\r\n\ Populates\ the\ map\ with\ a\ selection\ of\ test\ data\ in\ the\ form\ of\ 3\ dishes\r\n\ and\ their\ ingredients.\ No\ intervention\ required.\r\n
+comment2.params=
+comment2.target=void\ printMap()
+comment2.text=\r\n\ Prints\ a\ human\ readable\ representation\ of\ the\ map\ stored\ in\ the\ \r\n\ Dishes\ object.\r\n
+comment3.params=aKey
+comment3.target=void\ printMapValue(java.lang.String)
+comment3.text=\r\n\ Takes\ argument\ and\ checks\ for\ corresponding\ key\ in\ map.\r\n\ If\ found\ prints\ list\ of\ the\ ingredients\ found.\r\n\ No\ match\ for\ keys\ prints\ corresponding\ statement.\r\n\ @param\ aKey\r\n\ String\ to\ search\ the\ map\ for.\r\n
+comment4.params=aKey\ someIngredients
+comment4.target=void\ addMapEntry(java.lang.String,\ java.util.Set)
+comment4.text=\r\n\ Adds\ new\ dishes\ to\ the\ map.\r\n\ @param\ aKey\ Map\ key,\ duplicate\ overwrites.\r\n\ @param\ someIngredients\ set\ of\ strings\ of\ new\ ingredients.\r\n
+comment5.params=aKey
+comment5.target=boolean\ deleteEntry(java.lang.String)
+comment5.text=\r\n\ Deletes\ a\ dish\ from\ the\ map\ for\ a\ given\ dish\ name\r\n\ Returns\ True\ if\ successful,\ false\ otherwise.\r\n\ @param\ aKey\r\n\ key\ of\ entry\ to\ delete\ from\ the\ map.\r\n
+comment6.params=aKey\ anIngredient
+comment6.target=void\ addToValueAtKey(java.lang.String,\ java.lang.String)
+comment6.text=\r\n\ Adds\ to\ the\ set\ of\ ingredients\ for\ a\ given\ key.\ \r\n\ Takes\ arguments\ of\ a\ key\ (dish)\ and\ an\ ingredient.\ Both\ strings\r\n\ Assumption\ of\ no\ incorrect\ input.\ \r\n\ Does\ not\ return\ a\ value.\r\n\ @param\ aKey\ string\ of\ key\ to\ add\ to.\r\n\ @param\ anIngredient\ string\ of\ ingredient\ to\ add.\r\n
+comment7.params=aKey\ anIngredient
+comment7.target=void\ deleteFromValueAtKey(java.lang.String,\ java.lang.String)
+comment7.text=\r\n\ Deletes\ an\ ingredient\ from\ a\ dish.\r\n\ Takes\ arguments\ of\ a\ key\ (dish)\ and\ an\ ingredient.\ Both\ strings.\r\n\ Assumption\ of\ no\ incorrect\ entry.\r\n\ Does\ not\ return\ a\ value.\r\n\ @param\ aKey\ key\ to\ delete\ from\r\n\ @param\ anIngredient\ string\ to\ delete\r\n
+numComments=8

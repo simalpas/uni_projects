@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CyclingAdmin()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CyclingAdmin\r\n
+comment1.params=
+comment1.target=void\ clear()
+comment1.text=\r\n\ Clears\ the\ cyclists\ list.\r\n
+comment2.params=
+comment2.target=void\ readInCyclists()
+comment2.text=\r\n\ Replaces\ all\ cyclists\ currently\ stored,\ and\ populates\ from\ \r\n\ selected\ file.\ Text\ file\ is\ in\ the\ form\ of\ csv\ with\ each\ \r\n\ entry\ on\ a\ new\ line.\r\n
+comment3.params=age
+comment3.target=java.lang.String\ getRaceCat(int)
+comment3.text=\r\n\ Helper\ method\ for\ readInCyclists()\r\n\ @param\ (int)\ age\ of\ cyclist\r\n
+comment4.params=
+comment4.target=void\ rideRace()
+comment4.text=\r\n\ Generates\ a\ random\ number\ between\ 6000\ and\ 12000\ inclusive.\r\n\ Assigns\ this\ number\ to\ each\ cyclist\ as\ their\ race\ time\r\n
+comment5.params=
+comment5.target=void\ displayResults()
+comment5.text=\r\n\ Displays\ the\ results\ of\ the\ race,\ fastest\ first.\r\n
+numComments=6

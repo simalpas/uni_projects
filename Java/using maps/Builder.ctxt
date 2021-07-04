@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Builder()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Builder\r\n
+comment1.params=aReg\ aName\ anAddress\ aTrade
+comment1.target=void\ addContractor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Adds\ contractors\ to\ the\ map.\r\n\ @param\ aReg\ vehicle\ registration\r\n\ @param\ aName\ contractor's\ name\r\n\ @param\ anAddress\ Contractor's\ address\r\n\ @param\ aTrade\ Contractor's\ trade\r\n
+comment2.params=
+comment2.target=void\ printContractors()
+comment2.text=\r\n\ Iterates\ through\ the\ values\ of\ the\ map,\ printing\ attributes\ of\r\n\ the\ contractor\ object.\r\n
+comment3.params=aReg
+comment3.target=Contractor\ findContractor(java.lang.String)
+comment3.text=\r\n\ Returns\ a\ Contractor\ found\ using\ reg\ number,\ if\ not\ found\ alerts\r\n\ user,\ confirming\ reg,\ and\ returns\ null\r\n\ @param\ aReg\ vehicle\ registration\r\n\ @return\ Contractor\ (or\ null\ if\ not\ found).\r\n
+comment4.params=aTrade
+comment4.target=java.util.Set\ findContractorsForTrade(java.lang.String)
+comment4.text=\r\n\ Finds\ contractors\ according\ to\ trade\ and\ returns\ them\ as\ an\ unordered\r\n\ set.\r\n\ @param\ aTrade\ string\ to\ search\ for\ in\ Contractor\ trade.\r\n
+numComments=5

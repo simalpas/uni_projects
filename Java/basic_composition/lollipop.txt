@@ -1,0 +1,46 @@
+//Example 1
+Circle c = new Circle (100, OUColour.RED); //sweet
+Rectangle r = new Rectangle(10, 100, OUColour.PINK); //stick
+
+Lollipop lo = new Lollipop(c, r); //use them to construct the lollipop
+
+//Example 2 - anonymous components
+Lollipop lo = new Lollipop(new Circle(100, OUColour.RED), 
+							      new Rectangle(10, 100,OUColour.PINK)); 
+
+Rectangle r = lo.getStick(); //make the stick visible
+Circle c = lo.getSweet(); //make the sweet visible
+
+//Example 3 - a default size and colour lollipop
+Lollipop lo = new Lollipop();
+Rectangle r = lo.getStick(); //make the stick visible
+Circle c = lo.getSweet(); //make the sweet visible
+
+//Interacting with the lollipop
+
+lo.getSweet(); //we can get information about the sweet part
+lo.getStick(); //or get information about the stick part
+
+//move the lollipop, and lick it
+lo.vert(10); 
+lo.horiz(20);
+lo.lick(); 
+lo.lick(); 
+lo.lick(); 
+lo.getLicks();
+
+//Example 4, data hiding gone wrong
+Lollipop lo = new Lollipop();
+Rectangle r = lo.getStick(); //make the stick visible
+Circle c = lo.getSweet(); //make the sweet visible
+
+//now there are two references to the rectangle / stick and to the circle / sweet.
+//What happens if we send a message to the rectangle?
+r.setColour(OUColour.WHITE);//the stick changes colour
+r.setColour(OUColour.PURPLE);
+
+r.setXPos(0); //the stick moves when we send a message to the rectangle
+
+//we really have affected the whole lollipop...
+lo.horiz(20);
+lo.vert(20);

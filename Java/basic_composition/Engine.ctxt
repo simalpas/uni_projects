@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=aCapacity\ aPeakPower
+comment0.target=Engine(int,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Engine,\ using\ arguments\ of\ capacity\ in\ cc\r\n\ and\ peak\ power\ output\ in\ kW.\r\n
+comment1.params=
+comment1.target=Engine()
+comment1.text=\r\n\ Zero-argument\ constructor\ for\ objects\ of\ class\ Engine\ using\ default\ values\r\n\ for\ capacity\ and\ peak\ power.\r\n
+comment2.params=aCapacity
+comment2.target=void\ setCapacity(int)
+comment2.text=\r\n\ Setter\ method\ for\ capacity\ variable\r\n
+comment3.params=
+comment3.target=int\ getCapacity()
+comment3.text=\r\n\ Getter\ method\ for\ capacity\ variable\r\n
+comment4.params=aPeakPower
+comment4.target=void\ setPeakPower(double)
+comment4.text=\r\n\ Setter\ method\ for\ peakPower\ variable\r\n
+comment5.params=
+comment5.target=double\ getPeakPower()
+comment5.text=\r\n\ Getter\ method\ for\ peakPower\ variable\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Method\ to\ return\ a\ human\ readable\ form\ of\ the\ object.\r\n
+numComments=7

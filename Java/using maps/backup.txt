@@ -1,0 +1,21 @@
+Builder aBuilder = new Builder();
+
+aBuilder.addContractor("123ABC", "Andrew Smith", "1 The High Street", "plumber");
+aBuilder.addContractor("456DEF", "Janet Jones", "145 Main Street", "electrician");
+aBuilder.addContractor("789GHI","Chris Charter","50 Lake View", "roofer");
+
+aBuilder.printContractors();
+
+aBuilder.findContractor("456DEF");
+aBuilder.findContractor("456ZZZ");
+
+//More contractors to check findContractorsForTrade()
+aBuilder.addContractor("LKJ234", "Bob the plumber", "Everywhere and nowhere", "plumber");
+aBuilder.addContractor("POI456", "Cheesy Smith", "Down the Road", "roofer");
+aBuilder.addContractor("IUH987", "The Muffin Man", "Drury Lane", "electrician");
+
+// ensure it is a set being returned
+Set<Contractor> name = new HashSet<>(aBuilder.findContractorsForTrade("electrician"));
+aBuilder.findContractorsForTrade("plumber");
+aBuilder.findContractorsForTrade("roofer");
+aBuilder.findContractorsForTrade("carpenter");
